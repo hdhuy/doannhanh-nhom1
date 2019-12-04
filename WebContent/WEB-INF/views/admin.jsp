@@ -79,9 +79,7 @@
 							<li><a href="#">Thêm thành viên</a></li>
 							<li><a href="#">Phân quyền</a></li>
 						</ul></li>
-				</ul>
-
-			</div>
+				</ul>			</div>
 
 		</nav>
 		<!-- /. NAV SIDE  -->
