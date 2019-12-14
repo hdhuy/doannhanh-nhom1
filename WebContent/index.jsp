@@ -8,6 +8,7 @@
 <link href="assets/css/home/home.css" rel="stylesheet" />
 </head>
 <body>
+<%response.sendRedirect("trangchu");%>
 <div id="wrapper">
 <jsp:include page="WEB-INF/views/home/header.jsp"></jsp:include>
 <jsp:include page="WEB-INF/views/home/body.jsp"></jsp:include>

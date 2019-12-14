@@ -17,11 +17,11 @@ public class MonAn {
 	String MoTa;
 	String LoaiSanPham;
 	String LinkAnh;
-		
+	int CoSan;
 	public MonAn() {
 	}
 	
-	public MonAn(int maMonAn, String tenMonAn, int gia, int loiNhuan, String moTa, String loaiSanPham, String linkAnh) {
+	public MonAn(int maMonAn, String tenMonAn, int gia, int loiNhuan, String moTa, String loaiSanPham, String linkAnh,int cosan) {
 		MaMonAn = maMonAn;
 		TenMonAn = tenMonAn;
 		Gia = gia;
@@ -29,6 +29,15 @@ public class MonAn {
 		MoTa = moTa;
 		LoaiSanPham = loaiSanPham;
 		LinkAnh = linkAnh;
+		CoSan=cosan;
+	}
+	
+	public int getCoSan() {
+		return CoSan;
+	}
+
+	public void setCoSan(int coSan) {
+		CoSan = coSan;
 	}
 
 	public int getMaMonAn() {

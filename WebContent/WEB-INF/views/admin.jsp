@@ -32,7 +32,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Lung Thị Linh</a>
+				<a class="navbar-brand" href="index.html">Vu Duc Trung</a>
 			</div>
 			<div
 				style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
@@ -41,49 +41,52 @@
 			</div>
 		</nav>
 		<!-- /. NAV TOP  -->
+		<form action="admin" method="post">
 		<nav class="navbar-default navbar-side" role="navigation">
 			<div class="sidebar-collapse">
 				<ul class="nav" id="main-menu">
 					<li class="text-center"><img src="assets/imgAd/find_user.png"
 						class="user-image img-responsive" /></li>
 
-					<li><a class="active-menu" href="index.html"><i
+					<li><a href="admin" name="thongbao"><i
 							class="fas fa-bell fa-3x"></i>Thông báo</a></li>
-					<li><a class="active-menu" href="index.html"><i
-							class="fas fa-hand-holding-usd fa-3x"></i>Doanh Thu</a></li>
+					<li><button onclick="admin" name="doanhthu" style="padding-left: 20px;"><i
+							class="fas fa-hand-holding-usd fa-3x"></i>Doanh Thu</button></li>
 					<li><a href="#"><i class="fas fa-warehouse fa-3x"></i> Kho
 							hàng<span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
-							<li><a href="#">Xem kho hàng</a></li>
-							<li><a href="#">Nhập xuất</a></li>
-							<li><a href="#">Lịch sử kho</a></li>
-							<li><a href="#">Nguyên liệu</a></li>
+							<li><button onclick="admin" name="qlkhohang">Quản lí kho hàng</button></li>
+							<li><button onclick="admin" name="nhap">Nhập nguyên liệu</button></li>
+							<li><button onclick="admin" name="xuat">Xuất nguyên liệu</button></li>
+							<li><button onclick="admin" name="lichsukho">Lịch sử kho</button></li>
+							<li><button onclick="admin" name="nguyenlieu">Nguyên liệu</button></li>
 						</ul></li>
 					<li><a href="#"><i class="fas fa-utensils fa-3x"></i> Món ăn<span
 							class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
-							<li><a href="#">Quản lí món ăn</a></li>
-							<li><a href="#">Thêm món ăn</a></li>
+							<li><button onclick="admin" name="qlmonan">Quản lí món ăn</button></li>
+							<li><button onclick="admin" name="themmonan">Thêm món ăn</button></li>
 						</ul></li>
 					
-					<li><a href="#"><i class="fas fa-money-bill fa-3x"></i> Đơn
-							hàng<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
-							<li><a href="#">Xem đơn hàng</a></li>
-							<li><a href="#">Đơn cần duyệt</a></li>
-						</ul></li>
+					<li><button onclick="admin" name="donhang"><i class="fas fa-money-bill fa-3x"></i><a> Đơn
+							hàng</a></button>
+						
+						
 					<li><a href="#"><i class="far fa-user fa-3x"></i> Thành
 							viên <span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
-							<li><a href="#">Quản lí thành viên</a></li>
-							<li><a href="#">Thêm thành viên</a></li>
-							<li><a href="#">Phân quyền</a></li>
+							<li><button onclick="admin" name="qlthanhvien">Quản lí thành viên</button></li>
+							<li><button onclick="admin" name="themthanhvien">Thêm thành viên</button></li>
 						</ul></li>
 				</ul>			</div>
 
 		</nav>
+		</form>
 		<!-- /. NAV SIDE  -->
-		<jsp:include page="admin/themthanhvien.jsp"></jsp:include>
+		
+		<jsp:include page="admin/${include}.jsp"></jsp:include>
+		
+		
 		<!-- /. PAGE WRAPPER  -->
 	</div>
 	<!-- /. WRAPPER  -->

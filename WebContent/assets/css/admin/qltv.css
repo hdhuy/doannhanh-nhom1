@@ -1,0 +1,76 @@
+/* Style the search box */
+#mySearch {
+  width: 350px;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+.qltv button{
+	width: 100px;
+	height: 50px;
+}
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+#myMenu li{
+	 width: 350px;
+	 background-color: #c0c0c0;
+}
+/* Style the navigation links */
+#myMenu li button {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: white;
+ width: auto;
+  height: 50px;
+}
+
+#myMenu li button:hover {
+  background-color: #eee;
+}
+.qltv{
+	height: 60px;
+	width: 1000px;
+	clear: both;
+}
+.sbar{
+	height: 60px;
+	width: 600px;
+}
+.content-detail{
+	float: left;
+	width: 310px;
+	margin-left: 10px;
+	margin-top: 70px;
+}
+.content-detail input{
+	width: 250px;
+	height: 50px;
+	border-radius: 10px;
+	border: solid 1px  #c0c0c0;
+	padding-left: 10px;
+}
+select{
+	width: 170px;
+	height: 50px;
+	border-radius: 10px;
+	border: solid 1px  #c0c0c0;
+	font-size: 19px;
+	padding-left: 20px;
+}
+.funtion button{
+	margin-top: 60px;
+	border-radius: 10px;
+	background-color: red; 
+	width: 300px;
+	height: 60px;
+	color: white;
+	font-size: 24px;
+	margin-left: 10px;
+}

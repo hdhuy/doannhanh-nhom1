@@ -27,9 +27,9 @@ public class ThemThanhVien {
 
 	HttpServletRequest r;
 	
-	@RequestMapping(value="themthanhvien", params="themthanhvien", method= RequestMethod.POST)
+	@RequestMapping(value="admin", params="ttv", method= RequestMethod.POST)
 	public String reDangki(ModelMap model,HttpServletRequest request) {
-		String re ="admin";
+		model.addAttribute("include", "themthanhvien");
 		try {
 			
 			if(validateField(request, model)==true) {
@@ -47,7 +47,7 @@ public class ThemThanhVien {
 		} catch (Exception e) {
 			System.out.println("lỗi đăng kí: "+e);
 		}
-		return re;
+		return "admin";
 	}
 	
 	public ThanhVien TaoThanhVien(HttpServletRequest request) {

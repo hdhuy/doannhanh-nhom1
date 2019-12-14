@@ -7,10 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div id="page-wrapper">
-		<div id="page-inner">
-			<h1>doanh thu</h1>
-		</div>
-	</div>
+<h1>TRANG CHU</h1>
+<a href="admin">admin</a>
 </body>
 </html>

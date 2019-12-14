@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div id="page-wrapper">
+		<div id="page-inner">
+			<h1>nguyen lieu</h1>
+		</div>
+	</div>
 </body>
 </html>

@@ -64,7 +64,9 @@ public class ThanhVien {
 		ChucVu = chucVu;
 		LinkAnh = linkAnh;
 	}
-
+	public int getMtv() {
+		return MaThanhVien;
+	}
 	public void setMaThanhVien(int maThanhVien) {
 		MaThanhVien = maThanhVien;
 	}

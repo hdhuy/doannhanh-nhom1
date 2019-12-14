@@ -19,7 +19,7 @@ select{
 	font-size: 19px;
 	padding-left: 20px;
 }
-button{
+.funtion button{
 	margin-top: 60px;
 	border-radius: 10px;
 	background-color: red; 

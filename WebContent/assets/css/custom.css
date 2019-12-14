@@ -215,7 +215,7 @@ font-size: 30px;
 font-weight: 700;
 }
 .active-menu {
-    background-color: #808080!important;
+    background-color: #202020;
 }
 
 .arrow {
@@ -251,12 +251,45 @@ li i{
 .sidebar-collapse .nav {
 	padding:0;
 }
-.sidebar-collapse .nav > li > a {
+.sidebar-collapse .nav > li > a{
 	color:#fff;
 	background:#202020;
 	text-shadow:none;
 	
 }
+.sidebar-collapse .nav > li > button {
+	background-color: #202020;
+        width: 100%;
+    text-align: left;
+    color: white;
+    border: none;
+    height: 73px;
+    padding-left: 10px;
+    
+}
+.sidebar-collapse .nav > li > ul>li>button{
+	    width: 62%;
+	    height: 50px;
+    	float: left;
+    	margin-left: 75px;
+    	font-weight: bold;
+    	color:#a79e9e;
+}
+.sidebar-collapse .nav > li > ul>li>button:hover{
+	background-color: #202020;
+	color:red;
+}
+.sidebar-collapse .nav > li > button:hover {
+	background-color: black;
+	}
+.sidebar-collapse .nav > li > button>a {
+    padding-left: 10px;
+    color: white;
+	
+}
+.sidebar-collapse .nav > li > button>a:hover {
+	text-decoration: none;
+	}
 .sidebar-collapse > .nav > li > a {
 	padding:15px 10px;
 }

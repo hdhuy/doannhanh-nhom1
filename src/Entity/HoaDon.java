@@ -11,41 +11,57 @@ public class HoaDon {
 	@Id
 	@GeneratedValue
 	int MaDonHang;
-	String DonViVanChuyen;
-	int PhiVanChuyen;
-	int SoSanPham;
-	int Gia;
+	int MaThanhVien;
 	int TongTien;
 	int LoiNhuan;
-	int MaThanhVien;
+	String HoTen;
+	String CMND;
 	String DiaChi;
 	String SoDienThoai;
-	String CMND;
 	String MoTa;
 	Date NgayMua;
+	Date NgayHoanThanh;
 	String TrangThai;
+	String DonViVanChuyen;
 	
 	public HoaDon() {
 		
 	}
-	
-	public HoaDon(int maDonHang, String donViVanChuyen, int phiVanChuyen, int soSanPham, int gia, int tongTien,
-			int loiNhuan, int maThanhVien, String diaChi, String soDienThoai, String cMND, String moTa, Date ngayMua,
-			String trangThai) {
+
+	public HoaDon(int maDonHang, int maThanhVien, int tongTien, int loiNhuan, String hoTen, String cMND, String diaChi,
+			String soDienThoai, String moTa, Date ngayMua, Date ngayHoanThanh, String trangThai,
+			String donViVanChuyen) {
+		super();
 		MaDonHang = maDonHang;
-		DonViVanChuyen = donViVanChuyen;
-		PhiVanChuyen = phiVanChuyen;
-		SoSanPham = soSanPham;
-		Gia = gia;
+		MaThanhVien = maThanhVien;
 		TongTien = tongTien;
 		LoiNhuan = loiNhuan;
-		MaThanhVien = maThanhVien;
+		HoTen = hoTen;
+		CMND = cMND;
 		DiaChi = diaChi;
 		SoDienThoai = soDienThoai;
-		CMND = cMND;
 		MoTa = moTa;
 		NgayMua = ngayMua;
+		NgayHoanThanh = ngayHoanThanh;
 		TrangThai = trangThai;
+		DonViVanChuyen = donViVanChuyen;
+	}
+	public HoaDon(int maThanhVien, int tongTien, int loiNhuan, String hoTen, String cMND, String diaChi,
+			String soDienThoai, String moTa, Date ngayMua, Date ngayHoanThanh, String trangThai,
+			String donViVanChuyen) {
+		super();
+		MaThanhVien = maThanhVien;
+		TongTien = tongTien;
+		LoiNhuan = loiNhuan;
+		HoTen = hoTen;
+		CMND = cMND;
+		DiaChi = diaChi;
+		SoDienThoai = soDienThoai;
+		MoTa = moTa;
+		NgayMua = ngayMua;
+		NgayHoanThanh = ngayHoanThanh;
+		TrangThai = trangThai;
+		DonViVanChuyen = donViVanChuyen;
 	}
 
 	public int getMaDonHang() {
@@ -56,36 +72,12 @@ public class HoaDon {
 		MaDonHang = maDonHang;
 	}
 
-	public String getDonViVanChuyen() {
-		return DonViVanChuyen;
+	public int getMaThanhVien() {
+		return MaThanhVien;
 	}
 
-	public void setDonViVanChuyen(String donViVanChuyen) {
-		DonViVanChuyen = donViVanChuyen;
-	}
-
-	public int getPhiVanChuyen() {
-		return PhiVanChuyen;
-	}
-
-	public void setPhiVanChuyen(int phiVanChuyen) {
-		PhiVanChuyen = phiVanChuyen;
-	}
-
-	public int getSoSanPham() {
-		return SoSanPham;
-	}
-
-	public void setSoSanPham(int soSanPham) {
-		SoSanPham = soSanPham;
-	}
-
-	public int getGia() {
-		return Gia;
-	}
-
-	public void setGia(int gia) {
-		Gia = gia;
+	public void setMaThanhVien(int maThanhVien) {
+		MaThanhVien = maThanhVien;
 	}
 
 	public int getTongTien() {
@@ -104,12 +96,20 @@ public class HoaDon {
 		LoiNhuan = loiNhuan;
 	}
 
-	public int getMaThanhVien() {
-		return MaThanhVien;
+	public String getHoTen() {
+		return HoTen;
 	}
 
-	public void setMaThanhVien(int maThanhVien) {
-		MaThanhVien = maThanhVien;
+	public void setHoTen(String hoTen) {
+		HoTen = hoTen;
+	}
+
+	public String getCMND() {
+		return CMND;
+	}
+
+	public void setCMND(String cMND) {
+		CMND = cMND;
 	}
 
 	public String getDiaChi() {
@@ -128,14 +128,6 @@ public class HoaDon {
 		SoDienThoai = soDienThoai;
 	}
 
-	public String getCMND() {
-		return CMND;
-	}
-
-	public void setCMND(String cMND) {
-		CMND = cMND;
-	}
-
 	public String getMoTa() {
 		return MoTa;
 	}
@@ -152,6 +144,14 @@ public class HoaDon {
 		NgayMua = ngayMua;
 	}
 
+	public Date getNgayHoanThanh() {
+		return NgayHoanThanh;
+	}
+
+	public void setNgayHoanThanh(Date ngayHoanThanh) {
+		NgayHoanThanh = ngayHoanThanh;
+	}
+
 	public String getTrangThai() {
 		return TrangThai;
 	}
@@ -159,6 +159,15 @@ public class HoaDon {
 	public void setTrangThai(String trangThai) {
 		TrangThai = trangThai;
 	}
+
+	public String getDonViVanChuyen() {
+		return DonViVanChuyen;
+	}
+
+	public void setDonViVanChuyen(String donViVanChuyen) {
+		DonViVanChuyen = donViVanChuyen;
+	}
 	
+
 	
 }
